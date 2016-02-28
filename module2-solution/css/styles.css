@@ -1,0 +1,109 @@
+/* Base styles */
+
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+	height: 100%;
+	font-family: helvetica;
+}
+
+div.container{
+	width: 100%;
+}
+
+h1{
+	text-align: center;
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+div.textbox{
+	position: relative;
+	overflow: auto;
+	background: gray;
+	border: thin solid black;
+	padding: 50px 10px 10px 10px;
+	height: 200px;
+}
+
+div.titlebox{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: white;
+	border: solid black;
+	border-width: 0px 0px thin thin;
+	padding: 0px 40px 0px 40px;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+#title1{
+	background: #C99;
+}
+
+#title2{
+	background: #A44;
+	color: white;
+}
+
+#title3{
+	background: #EE8;
+}
+
+/* Desktop layout */
+
+@media screen and (min-width: 992px) {
+	h1{
+		padding-bottom: 40px;
+		padding-top: 25px;
+	}
+
+	#box1, #box2, #box3{
+		float:left;
+		width: 33.33%;
+		padding: 10px;
+	}
+}
+
+/* Tablet layout */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	h1{
+		padding-bottom: 10px;
+		padding-top: 25px;
+	}
+
+	#box1, #box2{
+		float:left;
+		width: 50%;
+		padding: 10px;
+	}
+
+	#box3{
+		float:left;
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+/* Mobile layout */
+
+@media screen and (max-width: 767px) {
+	h1{
+		padding-bottom: 0px;
+		padding-top: 25px;
+	}
+
+	#box1, #box2, #box3{
+		float:left;
+		width: 100%;
+		padding: 10px 40px 10px 40px;
+	}
+
+	div.textbox{
+		height: 150px;
+	}
+}
