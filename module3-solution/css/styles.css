@@ -1,0 +1,105 @@
+body {
+  color: #fff;
+  background-color: #100;
+  font-family: 'Helvetica';
+  box-sizing: border-box;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #622;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 10px;
+}
+.navbar-brand h1 {
+  color: #FFF;
+  font-weight: thin;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list > li {
+  background: #833;
+}
+#nav-list > li.not-last {
+  border-bottom: solid thin #CAA;
+}
+#nav-list a {
+  color: #FFF;
+  text-align: center;
+}
+#nav-list a:hover, #nav-list a:focus {
+  font-style: italic;
+  color: #000;
+  background: #CAA;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+#navbar-button {
+  clear: both;
+  margin-top: -42px;
+}
+/*#navbar-button {
+  margin-top: -37px;
+  clear: both;
+  margin-top: 0px;
+}*/
+/* END HEADER */
+
+/* HOME PAGE */
+.row {
+  padding: 10px;
+}
+section {
+  background: #622;
+  padding: 10px 30px;
+}
+section h3 {
+  padding-bottom: 10px;
+}
+section a {
+  font-size: 1.5em;
+}
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    margin-top: -5px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    height: 45px;
+  }
+  .navbar-brand h1 {
+    padding-top: 15px;
+  }
+  #collapsable-nav a {
+    font-size: 1.2em;
+  }
+  /* End Header */
+}
